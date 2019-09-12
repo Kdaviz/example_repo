@@ -1,19 +1,13 @@
----
-title: "09/12/19"
-author: "Keyanna Davis"
-date: "9/12/2019"
-output: github_document
----
-
-```{r setup, include = FALSE}
-library(tidyverse)
-```
+09/12/19
+================
+Keyanna Davis
+9/12/2019
 
 The purpose of this file is to present a couple of basic plots using `ggplot`.
 
 First we create a dataframe containing variables for our plots.
 
-```{r df_create}
+``` r
 set.seed(1234)
 
 plot_df = tibble(
@@ -24,12 +18,18 @@ plot_df = tibble(
 
 First we show a histogram of the `x` variable.
 
-```{r x_hist}
+``` r
 ggplot(plot_df, aes(x = x)) + geom_histogram()
 ```
 
-Next we show a scatterplot of `y` vs `x`. 
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-```{r yx_scatter}
+![](template_rmd_files/figure-markdown_github/x_hist-1.png)
+
+Next we show a scatterplot of `y` vs `x`.
+
+``` r
 ggplot(plot_df, aes(x = x, y = y)) + geom_point()
 ```
+
+![](template_rmd_files/figure-markdown_github/yx_scatter-1.png)
