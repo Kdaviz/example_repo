@@ -3,7 +3,8 @@
 Keyanna Davis
 9/12/2019
 
-The purpose of this file is to present a couple of basic plots using `ggplot`.
+The purpose of this file is to present a couple of basic plots using
+`ggplot`.
 
 First we create a dataframe containing variables for our plots.
 
@@ -16,7 +17,8 @@ plot_df = tibble(
 )
 ```
 
-First we show a histogram of the `x` variable.
+First we show a histogram of the `x`
+    variable.
 
 ``` r
 ggplot(plot_df, aes(x = x)) + geom_histogram()
@@ -24,7 +26,7 @@ ggplot(plot_df, aes(x = x)) + geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](template_rmd_files/figure-markdown_github/x_hist-1.png)
+![](template_rmd_files/figure-gfm/x_hist-1.png)<!-- -->
 
 Next we show a scatterplot of `y` vs `x`.
 
@@ -32,4 +34,12 @@ Next we show a scatterplot of `y` vs `x`.
 ggplot(plot_df, aes(x = x, y = y)) + geom_point()
 ```
 
-![](template_rmd_files/figure-markdown_github/yx_scatter-1.png)
+![](template_rmd_files/figure-gfm/yx_scatter-1.png)<!-- -->
+
+# Here is my title
+
+``` r
+n<-rnorm(15)
+```
+
+and this is all that i will do
